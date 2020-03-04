@@ -1,0 +1,9 @@
+os: linux
+arch: ppc64le
+#sudo: required
+
+services:
+  - docker
+script: 
+  - uname -a
+  - docker pull rancher/rancher
