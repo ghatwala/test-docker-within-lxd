@@ -1,10 +1,11 @@
-os: linux
-arch: ppc64le
-#sudo: required
+matrix:
+  include:
+    - arch: ppc64le
+    - arch: amd64
 
 services:
   - docker
 script: 
   - uname -a
-  #- docker pull rancher/rancher
-  - docker pull ubuntu:latest
+  - docker pull rancher/rancher
+  #- docker pull ubuntu:latest
