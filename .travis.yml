@@ -6,4 +6,5 @@ services:
   - docker
 script: 
   - uname -a
-  - docker pull rancher/rancher
+  #- docker pull rancher/rancher
+  - docker pull ubuntu:latest
